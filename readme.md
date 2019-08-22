@@ -41,9 +41,9 @@ to calculate distance between locations
 
 ### tour
 
-    to calculate best route between locations with/without restriction
-    beaware the location quantity increases the calculations exponentialy
-    as for 7 location without restriction there is 5040 possibilities...
+to calculate best route between locations with/without restriction
+beaware the location quantity increases the calculations exponentialy
+as for 7 location without restriction there is 5040 possibilities...
 
 ```javaScript
  var osrm  = require('osrm_tour');
