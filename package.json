@@ -1,0 +1,21 @@
+{
+  "name": "osrm_tour",
+  "version": "1.0.1",
+  "description": "client package to calculate optimized rout between location with restrictions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "osrm",
+    "routing",
+    "route with restriction",
+    "delivery routing"
+  ],
+  "author": "babak.zarrinbal@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.1.0",
+    "request": "^2.88.0"
+  }
+}
