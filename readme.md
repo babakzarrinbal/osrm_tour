@@ -1,6 +1,8 @@
 # osrm_tour
 
-    client Package to calculate distance and finding optimized routing between diffrent location with/without restrictions including servingtime, before, after, duetime, readytime from instance of osrm routing server
+client Package to calculate distance and
+finding optimized routing between diffrent location with/without restrictions
+including servingtime, before, after, duetime, readytime from instance of osrm routing server
 
 ## Installation
 
