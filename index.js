@@ -1,6 +1,5 @@
 var request = require("request");
-var async = require("async");
-
+var { queue } = require("async");
 var exp = {
   osrmurl: "http://router.project-osrm.org/route/v1/driving/",
   request: {
@@ -24,7 +23,7 @@ var possibleroutes = function possibleroutes(ar, prev = "") {
   return result;
 };
 
-var requestqueue = async.queue(function(input, callback) {
+var requestqueue = queue(function(input, callback) {
   request(input, function(error, response, body) {
     callback({ error, response, body });
   });
