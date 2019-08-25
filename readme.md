@@ -57,6 +57,7 @@ as for 7 location without restriction there is 5040 possibilities...
     osrm.url  = "http://<yourosrmserver>/route/v1/driving/" ;
     //belows are the defaults
     osrm.request.retry  = 3;
+    osrm.request.retrydelay  = 3000; //in miliseconds
     osrm.request.threads  = 30;
 
   var input = [
