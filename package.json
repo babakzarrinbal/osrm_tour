@@ -1,6 +1,6 @@
 {
   "name": "osrm_tour",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "client package to calculate optimized rout between location with restrictions",
   "main": "index.js",
   "scripts": {
