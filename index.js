@@ -5,6 +5,7 @@ var exp = {
   osrmurl: "http://router.project-osrm.org/route/v1/driving/",
   request: {
     retry: 3,
+    retrydelay: 3000,
     threads: 50
   }
 };
@@ -46,7 +47,9 @@ var requestwq = (input, retries, retry) => {
           (result || {}).body == '{"message":"Too Many Requests"}') &&
         retry <= retries
       ) {
-        await new Promise(resolve => setTimeout(resolve, 3000));
+        await new Promise(resolve =>
+          setTimeout(resolve, exp.request.retrydelay)
+        );
         return resolve(await requestwq(input, retries, retry + 1));
       }
       resolve(result);
